@@ -10,7 +10,7 @@ from pathlib import Path
 import tempfile
 from PIL import Image
 
-st.set_page_config(page_title="Health GIS Offical", layout="wide")
+st.set_page_config(page_title="Health GIS", layout="wide")
 
 #pdffile = open('最终版本-健康GIS研讨会2023一号通知.pdf', 'rb')
 
@@ -26,7 +26,7 @@ image629 = Image.open('629.jpg')
 imagemap = Image.open('地图.jpg')
 
 logoimage = Image.open('网站背景长.jpg')
-st.image(logoimage,caption=' ',width=1800,use_column_width=False)
+st.image(logoimage,caption=' ',use_column_width=)
     
 tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(["本届会议概览","会议通知","会议日程","历届会议信息","会议报名","参会地图"])
 

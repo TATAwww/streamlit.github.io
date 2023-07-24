@@ -16,20 +16,20 @@ import tempfile
 
 st.set_page_config(page_title="Health GIS Offical", layout="wide")
 
-#pdffile = open('F:\\TATAwork\\202305健康GIS\\网站官方\\最终版本-健康GIS研讨会2023一号通知.pdf', 'rb')
+#pdffile = open('最终版本-健康GIS研讨会2023一号通知.pdf', 'rb')
 
 
-image1 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\展板.jpg')
-image2 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\易拉宝.jpg')
-image3 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\正文题图.png')
-image12 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\现场图片1.jpg')
-image626 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\626.jpg')
-image627 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\627.jpg')
-image628 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\628.jpg')
-image629 = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\629.jpg')
-imagemap = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\地图.jpg')
+image1 = Image.open('展板.jpg')
+image2 = Image.open('易拉宝.jpg')
+image3 = Image.open('正文题图.png')
+image12 = Image.open('现场图片1.jpg')
+image626 = Image.open('626.jpg')
+image627 = Image.open('627.jpg')
+image628 = Image.open('628.jpg')
+image629 = Image.open('629.jpg')
+imagemap = Image.open('地图.jpg')
 
-logoimage = Image.open('F:\\TATAwork\\202305健康GIS\\网站官方\\网站背景长.jpg')
+logoimage = Image.open('网站背景长.jpg')
 st.image(logoimage,caption=' ',width=1800,use_column_width=False)
     
 tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(["本届会议概览","会议通知","会议日程","历届会议信息","会议报名","参会地图"])
@@ -46,7 +46,7 @@ tab11.markdown("""### ・本次协办单位包括中国地理学会健康地理�
 
 tab12.image(image12,caption=' ',width=800,use_column_width=False)
 
-tab2.download_button("会议通知pdf下载", 'F:\\TATAwork\\202305健康GIS\\网站官方\\最终版本-健康GIS研讨会2023一号通知.pdf', file_name="2023健康GIS会议一号通知.pdf",mime='application/pdf', key=None, help=None, on_click=None, args=None, kwargs=None)
+tab2.download_button("会议通知pdf下载", '最终版本-健康GIS研讨会2023一号通知.pdf', file_name="2023健康GIS会议一号通知.pdf",mime='application/pdf', key=None, help=None, on_click=None, args=None, kwargs=None)
 
 tab2.image(image3,caption=' ',width=1200,use_column_width=False)
 tab2.markdown('<i class="material-icons">近年来，环境污染、爆发性传染病等公共卫生健康问题已成为各级政府、科研机构和公众关注的焦点。地理信息和空间分析技术为这些问题的解决提供了一个新的研究工具，目前已广泛应用于各个领域。为培养我国公共卫生与地理信息技术复合型人才，国际华人地理信息科学协会（The International Association of Chinese Professionals in Geographic Information Sciences,简称CPGIS）已主办了六届“地理信息和空间分析技术在公共卫生健康领域的应用”研讨会，获得了热烈的反响。为进一步促进我国地理信息和空间分析技术在公共卫生健康领域的开展和应用，CPGIS携手中国地理学会健康地理专业委员会、中国地理学会地理模型与地理信息分析专业委员会，秉持“以交流促进步，以沟通促学习”的理念，将于2023年6月26 - 29日在华东师范大学举办第七届“地理信息和空间分析技术在公共卫生健康领域的应用”研讨会。本次研讨会拟采用线上线下结合的方式，将邀请相关领域有较高建树的华人学者就地理信息和空间分析技术的基本原理、方法及其在公共卫生健康领域的实际应用进行讲座介绍、讨论和上机培训。</i>',unsafe_allow_html=True)

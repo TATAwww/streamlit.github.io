@@ -9,10 +9,6 @@ import base64
 from pathlib import Path
 import tempfile
 from PIL import Image
-import streamlit as st
-import base64
-from pathlib import Path
-import tempfile
 
 st.set_page_config(page_title="Health GIS Offical", layout="wide")
 

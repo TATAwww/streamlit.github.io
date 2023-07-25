@@ -41,8 +41,10 @@ tab11.markdown("""<span>本次协办单位包括中国地理学会健康地理�
 
 tab12.image(image12,caption=' ',width=800,use_column_width=False)
 
-tab2.download_button("会议通知pdf下载", '最终版本-健康GIS研讨会2023一号通知.pdf', file_name="2023健康GIS会议一号通知.pdf",mime='application/pdf', key=None, help=None, on_click=None, args=None, kwargs=None)
-tab2.download_button("会议日程pdf下载", '最终版本-健康GIS研讨会2023一号通知.pdf', file_name="2023健康GIS会议日程.pdf",mime='application/pdf', key=None, help=None, on_click=None, args=None, kwargs=None)
+with open("最终版本-健康GIS研讨会2023一号通知.zip","rb") as downloadfile1:
+    tab2.download_button("会议通知下载", downloadfile1, file_name="2023健康GIS会议一号通知.zip",mime='application/zip', key=None, help=None, on_click=None, args=None, kwargs=None)
+with open("2023健康GIS网站日程手册.zip","rb") as downloadfile2:
+    tab2.download_button("会议日程下载", downloadfile2, file_name="2023健康GIS会议日程.zip",mime='application/zip', key=None, help=None, on_click=None, args=None, kwargs=None)
 
 tab2.image(image3,caption=' ',width=1200,use_column_width=False)
 tab2.markdown('<i class="material-icons">近年来，环境污染、爆发性传染病等公共卫生健康问题已成为各级政府、科研机构和公众关注的焦点。地理信息和空间分析技术为这些问题的解决提供了一个新的研究工具，目前已广泛应用于各个领域。为培养我国公共卫生与地理信息技术复合型人才，国际华人地理信息科学协会（The International Association of Chinese Professionals in Geographic Information Sciences,简称CPGIS）携手中国地理学会健康地理专业委员会、中国地理学会地理模型与地理信息分析专业委员会、中国地理学会环境地理专业委员会，秉持“以交流促进步，以沟通促学习”的理念，于2023年6月26 - 29日在华东师范大学举办第七届“地理信息和空间分析技术在公共卫生健康领域的应用”研讨会。本次研讨会拟采用线上线下结合的方式，邀请相关领域有较高建树的华人学者就地理信息和空间分析技术的基本原理、方法及其在公共卫生健康领域的实际应用进行讲座介绍、讨论和上机培训。</i>',unsafe_allow_html=True)
@@ -94,7 +96,7 @@ tab2.text("李美芳：美国达特茅斯学院研究员")
 tab2.text("徐成东：中国地理科学与资源研究所/资源与环境信息系统国家重点实验室副研究员")
 tab2.text("姚申君：华东师范大学地理科学学院副教授")
 
-tab2.text("具体内容详见下载文件")
+tab2.caption("具体内容详见下载文件")
 
 tab2.header("二、时间及地点")
 tab2.text("论坛时间：2023年6月27-29日上午8:30-下午2:15（6月26日下午开始报到注册）")

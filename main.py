@@ -12,9 +12,6 @@ from PIL import Image
 
 st.set_page_config(page_title="Health GIS", layout="wide")
 
-#pdffile = open('最终版本-健康GIS研讨会2023一号通知.pdf', 'rb')
-
-
 image1 = Image.open('展板.jpg')
 image2 = Image.open('易拉宝.jpg')
 image3 = Image.open('正文题图.png')
@@ -76,7 +73,7 @@ tab2.text("邹　滨：中南大学地球科学与信息物理学院教授")
 tab2.text("林　戈：香港科技大学（广州）城市治理与设计学域教授")
 tab2.text("施　迅：美国达特茅斯学院地理系教授")
 tab2.text("徐　冰：清华大学地球系统科学系教授")
-tab2.text("黄　波：香港中文大学伟伦讲座教授")
+tab2.text("黄　波：香港大学地理系教授")
 tab2.text("屠　威：美国南佐治亚大学地理学和地理信息科学系教授")
 tab2.text("曹　凯：华东师范大学地理科学学院教授")
 tab2.text("程　杨：北京师范大学地理科学学部地理学院副教授")
